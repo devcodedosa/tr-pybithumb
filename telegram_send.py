@@ -3,7 +3,7 @@
 import argparse
 import requests
 
-BOT_TOKEN = "내봇코튼값"
+BOT_TOKEN = "내봇 토큰값"
 CHAT_ID = "내봇ID"
 
 
