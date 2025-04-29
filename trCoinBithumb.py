@@ -309,7 +309,6 @@ def handle_sigchld(signum, frame):
             if pid == 0:
                 break
             log.debug(f"부모 프로세스 {os.getpid()}: 자식 프로세스 {pid} 종료 (상태: {status})")
-            send_message(f"부모 프로세스 {os.getpid()}: 자식 프로세스 {pid} 종료 (상태: {status}) 좀비상태")
             
             # 여기에 코드를 삽입하여 부모 프로세스를 Kill
         except ChildProcessError:
